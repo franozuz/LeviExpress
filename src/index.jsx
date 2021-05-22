@@ -9,31 +9,16 @@ import './style.css';
 
 const App = () => (
   <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/reservation">Reservation</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Switch>
-        <Route path="/reservation">
-          <Header />
-          <Reservation />
-          <Footer />
-        </Route>
-        <Route path="/">
-          <Header />
-          <Home />
-          <Footer />
-        </Route>
-      </Switch>
-    </div>
+    <Header />
+    <Switch>
+      <Route path="/reservation">
+        <Reservation />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
+    <Footer />
   </Router>
 );
 
