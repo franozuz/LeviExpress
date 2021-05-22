@@ -4,9 +4,11 @@ import './style.css';
 const Footer = () => {
   return (
     <footer>
-      <div class="container">
-        <div class="footer-title">LeviExpress</div>
-        <div class="copyright">Czechitas Digitální akademie: Web, © 2021</div>
+      <div className="container">
+        <div className="footer-title">LeviExpress</div>
+        <div className="copyright">
+          Czechitas Digitální akademie: Web, © 2021
+        </div>
       </div>
     </footer>
   );

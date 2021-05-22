@@ -4,8 +4,8 @@ import './style.css';
 const Header = () => {
   return (
     <header>
-      <div class="container">
-        <h1 class="site-title">
+      <div className="container">
+        <h1 className="site-title">
           <a href="/">LeviExpress</a>
         </h1>
       </div>
