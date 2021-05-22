@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import JourneyDetail from '../JourneyDetail';
 import JourneyPicker from '../JourneyPicker';
 // import './style.css';
 
@@ -8,10 +9,10 @@ const Home = () => {
   return (
     <div>
       <JourneyPicker onJourneyChange={setJourney} />
-      <p className="confirmation">
+      <div className="confirmation">
         {' '}
-        {journey ? `Nalezeno spojení s ID ${journey.journeyId}` : null}{' '}
-      </p>
+        {journey ? <JourneyDetail journey={journey} /> : null}{' '}
+      </div>
     </div>
   );
 };
