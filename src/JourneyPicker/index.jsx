@@ -20,7 +20,7 @@ const DateOptions = (props) => {
     <>
       <option value="">Vyberte</option>
       {props.dateList.map((date) => (
-        <option key={date}>{date}</option>
+        <option key={date.dateBasic}>{date.dateBasic}</option>
       ))}
     </>
   );
